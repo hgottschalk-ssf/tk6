@@ -16,7 +16,7 @@ function ($http, ENDPOINT_URL) {
   };
   
   service.login = function(user) {
-    user["ttl"] = 120; // set ttl desired
+    //user["ttl"] = 120; // set ttl desired if you want it differnet
     return $http.post(getUrl()+"login",user);
   };
   
